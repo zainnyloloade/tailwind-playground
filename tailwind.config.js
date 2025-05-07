@@ -1,19 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html", "./src/**/*.{html,js}"], // ✅ Make sure this matches your file structure
+  content: [
+    "./index.html",
+    "./src/**/*.{html,js}",
+  ],
   theme: {
     extend: {
       colors: {
-        primary: '#ff6363',
+        primary: '#F97316',
         secondary: {
-          100: '#E2E2D5',
-          200: '#888888',
-        }
+          100: '#E0F2F1',
+          200: '#00796B',
+        },
       },
-      fontFamily:{
-        body:['playfair']
-      }
+      fontFamily: {
+        body: ['Inter', 'sans-serif'],
+        heading: ['Playfair Display', 'serif'],
+        retro: ['"Press Start 2P"', 'cursive'],
+      },
     },
   },
   plugins: [],
-};
+}
